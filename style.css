@@ -1,5 +1,4 @@
 * {
-    justify-content:space-evenly;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,25 +20,27 @@
 
 .card img {
     max-width: 100%;
-    height: auto;
+    height: 25vh;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .card-header {
     background-color: rgb(3, 11, 35);
-    margin-top: -10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 15px;
     color: whitesmoke;
     font-weight: bold;
     font-family: sans-serif;
+    font-size:x-large;
 }
 
 h1 {
     color: rgb(240, 234, 224);
     padding-top: 30px;
     text-align: center; 
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
