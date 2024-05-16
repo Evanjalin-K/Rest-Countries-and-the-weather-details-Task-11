@@ -18,7 +18,7 @@ async function fetchWeather(countryName) {
         console.error('Error fetching weather data:', error);
     }
 }
-async function renderCountries() {
+async function CountriesDetails() {
     const countries = await fetchCountryData();
     const container = document.getElementById('countryBox');
     container.innerHTML = '';
@@ -52,5 +52,5 @@ async function getWeather(cityName) {
     const weatherData = await fetchWeather(cityName);
     alert(`Weather in ${cityName}: ${weatherData.weather[0].description} \nTemperature:${weatherData.main.temp}`);
 }
-window.onload = renderCountries;
+window.onload = CountriesDetails;
 
