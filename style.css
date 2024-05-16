@@ -55,12 +55,9 @@ h1 {
     }
 }
     
-
 @media screen and (min-width: 992px) {
     .card {
         width: 31%;
         margin-right: 2%; 
-    }
-
-    
+    }   
 }
