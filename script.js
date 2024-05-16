@@ -35,7 +35,7 @@ async function CountriesDetails() {
         const temperature = weatherData.main.temp;
 
         card.innerHTML = `
-        <div class="card-header">${countryName}
+        <div class="card-header">${countryName}</div>
             <img src="${flagUrl}" class="card-img-top" alt="Flag">
             <div class="card-body">
                 <p class="card-text">Capital: ${capital}</p>
@@ -43,7 +43,6 @@ async function CountriesDetails() {
                 <p class="card-text">Lat/Lng: ${latlng}</p>
                 <p class="card-text">Country Code: ${countryCode}</p>
                 <button class="btn btn-primary" onclick="getWeather('${capital}')">Click for Weather</button>
-            </div>
             </div>
         `;
         container.appendChild(card);
